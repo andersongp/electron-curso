@@ -1,0 +1,40 @@
+{
+  "name": "electron-curso",
+  "version": "1.0.0",
+  "description": "App de exemplo do curso",
+  "main": "main.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development node_modules/.bin/electron .",
+    "build": "cross-env NODE_ENV=production node_modules/.bin/electron-builder -p always",
+    "build:dir": "cross-env NODE_ENV=production node_modules/.bin/electron-builder --dir",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "anderson.pantoja@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "electron-updater": "^2.21.4",
+    "mousetrap": "^1.6.1"
+  },
+  "devDependencies": {
+    "cross-env": "^5.1.4",
+    "electron": "^1.8.4",
+    "electron-builder": "^20.8.1",
+    "electron-reload": "^1.2.2"
+  },
+  "build": {
+    "appId": "cbm.ap.gov.br.electron-curso",
+    "productName": "Avançando com Electron",
+    "publish": {
+      "provider": "github",
+      "owner": "andersongp",
+      "repo":"electron-curso"
+    },
+    "directories": {
+      "output": "dist"
+    },
+    "mac": {
+      "icon": "icon.png",
+      "target": "dmg"
+    }
+  }
+}
