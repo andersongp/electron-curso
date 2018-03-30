@@ -12,6 +12,7 @@
   "author": "anderson.pantoja@gmail.com",
   "license": "ISC",
   "dependencies": {
+    "electron-log": "^2.2.14",
     "electron-updater": "^2.21.4",
     "mousetrap": "^1.6.1"
   },
@@ -27,7 +28,7 @@
     "publish": {
       "provider": "github",
       "owner": "andersongp",
-      "repo":"electron-curso"
+      "repo": "electron-curso"
     },
     "directories": {
       "output": "dist"
